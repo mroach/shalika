@@ -1,3 +1,32 @@
+.header-banner {
+  background-image: image-url("header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 200px;
+  padding-top: 40px;
+
+  ul {
+    font-family: Calligraffitti;
+    font-size: 6vh;
+    text-transform: lowercase;
+    text-align: center;
+
+    color: white;
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+  }
+}
+
+.status {
+  color: white;
+  &.success { background-color: #43ac6a }
+  &.alert { background-color: #f04124 }
+}
+td.status {
+  text-align: center;
+  vertical-align: middle;
+}
+
 /* Testimonials */
 h2 {
   margin-top: 40px;

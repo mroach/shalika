@@ -27,12 +27,17 @@ gem 'spring',        group: :development
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
-# Use unicorn as the app server
-# gem 'unicorn'
-
 gem 'foundation-rails'
 
 gem 'rollbar', '~> 1.2.6'
+
+# Change tracking for ActiveRecord models
+gem "audited-activerecord", "~> 4.0"
+
+# Easily slugged URLs
+gem 'friendly_id', '~> 5.0.0'
+
+gem 'redcarpet'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]

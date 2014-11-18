@@ -1,0 +1,24 @@
+
+<div class="row article">
+  <article>
+    <h3><%= link_to @article.title, blog_article_path(@article) %></h3>
+    <h6><%= l @article.published_at, format: :medium %></h6>
+    <div class="row">
+      <div class="large-6 columns">
+        <%= markdown @article.content %>
+      </div>
+    </div>
+  </article>
+</div>
+
+<hr />
+
+<div class="row">
+  <h2>Change history</h2>
+  <%= render partial: "shared/audits", object: @article.audits %>
+</div>
+
+<div class="row">
+  <%= link_to 'Edit', edit_admin_blog_article_path(@article) %> |
+  <%= link_to 'Back', admin_blog_articles_path %>
+</div>

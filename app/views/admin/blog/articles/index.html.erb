@@ -1,0 +1,31 @@
+
+<br />
+
+<div class="row">
+  <%= link_to "New Article", new_admin_blog_article_path, class: "button" %>
+</div>
+
+<div class="row">
+  <table>
+    <thead>
+      <tr>
+        <th>Article</th>
+        <th>Date</th>
+        <th>Published?</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @articles.each do |article| %>
+        <tr>
+          <td scope="row"><%= article.title %></td>
+          <td><%= l article.published_at, format: :longest %></td>
+          <td class="status <%= article.published? ? 'success' : 'alert' %>">
+            <%= article.published? ? 'Live!' : 'Draft' %>
+          </td>
+          <td><a href="<%= edit_admin_blog_article_path(article) %>"><i class="fi-page-edit"></i> Edit</td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
