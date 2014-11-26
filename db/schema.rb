@@ -11,12 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141118031314) do
+ActiveRecord::Schema.define(version: 20141125034435) do
 
   create_table "articles", force: true do |t|
     t.integer  "author"
     t.string   "title"
-    t.string   "content"
+    t.text     "content"
     t.boolean  "published"
     t.datetime "published_at"
     t.string   "slug"
@@ -51,6 +51,14 @@ ActiveRecord::Schema.define(version: 20141118031314) do
   add_index "audits", ["request_uuid"], name: "index_audits_on_request_uuid"
   add_index "audits", ["user_id", "user_type"], name: "user_index"
 
+  create_table "categories", force: true do |t|
+    t.string  "title"
+    t.string  "slug"
+    t.integer "category_id"
+  end
+
+  add_index "categories", ["slug"], name: "index_categories_on_slug", unique: true
+
   create_table "friendly_id_slugs", force: true do |t|
     t.string   "slug",                      null: false
     t.integer  "sluggable_id",              null: false
@@ -63,5 +71,17 @@ ActiveRecord::Schema.define(version: 20141118031314) do
   add_index "friendly_id_slugs", ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type"
   add_index "friendly_id_slugs", ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id"
   add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type"
+
+  create_table "pages", force: true do |t|
+    t.string   "title"
+    t.text     "content"
+    t.boolean  "published"
+    t.datetime "published_at"
+    t.string   "slug"
+    t.integer  "category_id"
+  end
+
+  add_index "pages", ["category_id"], name: "index_pages_on_category_id"
+  add_index "pages", ["slug"], name: "index_pages_on_slug", unique: true
 
 end

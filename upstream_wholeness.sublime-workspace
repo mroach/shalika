@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"font",
+				"font-weight"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"con",
+				"content"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
 				"publishe",
 				"published_at"
 			],
@@ -86,10 +102,6 @@
 			[
 				"inpu",
 				"input_type"
-			],
-			[
-				"font",
-				"font-size"
 			],
 			[
 				"margin",
@@ -412,10 +424,6 @@
 				"results"
 			],
 			[
-				"con",
-				"constraint"
-			],
-			[
 				"goo",
 				"google_url"
 			],
@@ -506,56 +514,49 @@
 			[
 				"coun",
 				"country_code"
-			],
-			[
-				"lok",
-				"lookup_result"
-			],
-			[
-				"lookup",
-				"lookup_result"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "config/routes.rb",
+			"file": "app/models/cms/category.rb",
 			"settings":
 			{
-				"buffer_size": 1842,
+				"buffer_size": 143,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/admin/blog/articles/index.html.erb",
+			"file": "db/schema.rb",
 			"settings":
 			{
-				"buffer_size": 639,
+				"buffer_size": 3456,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/controllers/admin/blog/articles_controller.rb",
+			"file": "app/models/cms/page.rb",
 			"settings":
 			{
-				"buffer_size": 2073,
+				"buffer_size": 235,
+				"line_ending": "Unix",
+				"name": "class Cms::Page"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/home.css.scss",
+			"settings":
+			{
+				"buffer_size": 2511,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/admin/blog/articles/show.html.erb",
+			"file": "app/views/admin/cms/pages/edit.html.erb",
 			"settings":
 			{
-				"buffer_size": 567,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/admin/blog/articles/_form.html.erb",
-			"settings":
-			{
-				"buffer_size": 1220,
+				"buffer_size": 141,
 				"line_ending": "Unix"
 			}
 		},
@@ -566,14 +567,59 @@
 				"buffer_size": 437,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "app/controllers/home_controller.rb",
+			"settings":
+			{
+				"buffer_size": 131,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/admin/cms/pages_controller.rb",
+			"settings":
+			{
+				"buffer_size": 2431,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/admin/home_controller.rb",
+			"settings":
+			{
+				"buffer_size": 77,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/admin/home/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 219,
+				"line_ending": "Unix",
+				"name": "<a class=\"button\">"
+			}
+		},
+		{
+			"file": "app/views/admin/cms/pages/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 797,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 247.0,
+		"height": 375.0,
 		"selected_items":
 		[
+			[
+				"ruby",
+				"Set Syntax: Ruby"
+			],
 			[
 				"ngin",
 				"Set Syntax: nginx"
@@ -633,10 +679,6 @@
 			[
 				"sort",
 				"Sort Lines"
-			],
-			[
-				"ruby",
-				"Set Syntax: Ruby"
 			],
 			[
 				"pac",
@@ -712,81 +754,106 @@
 		"/Users/mroach/workspace/upstream_wholeness/app",
 		"/Users/mroach/workspace/upstream_wholeness/app/assets",
 		"/Users/mroach/workspace/upstream_wholeness/app/assets/javascripts",
+		"/Users/mroach/workspace/upstream_wholeness/app/assets/stylesheets",
 		"/Users/mroach/workspace/upstream_wholeness/app/controllers",
 		"/Users/mroach/workspace/upstream_wholeness/app/controllers/admin",
+		"/Users/mroach/workspace/upstream_wholeness/app/controllers/admin/blog",
+		"/Users/mroach/workspace/upstream_wholeness/app/controllers/admin/cms",
 		"/Users/mroach/workspace/upstream_wholeness/app/helpers",
+		"/Users/mroach/workspace/upstream_wholeness/app/models/blog",
+		"/Users/mroach/workspace/upstream_wholeness/app/models/cms",
 		"/Users/mroach/workspace/upstream_wholeness/app/views",
 		"/Users/mroach/workspace/upstream_wholeness/app/views/admin",
-		"/Users/mroach/workspace/upstream_wholeness/app/views/admin/blog",
 		"/Users/mroach/workspace/upstream_wholeness/app/views/admin/blog/articles",
+		"/Users/mroach/workspace/upstream_wholeness/app/views/admin/cms",
+		"/Users/mroach/workspace/upstream_wholeness/app/views/admin/cms/pages",
+		"/Users/mroach/workspace/upstream_wholeness/app/views/admin/home",
 		"/Users/mroach/workspace/upstream_wholeness/app/views/blog",
 		"/Users/mroach/workspace/upstream_wholeness/app/views/blog/articles",
+		"/Users/mroach/workspace/upstream_wholeness/app/views/home",
 		"/Users/mroach/workspace/upstream_wholeness/app/views/layouts",
-		"/Users/mroach/workspace/upstream_wholeness/config",
-		"/Users/mroach/workspace/upstream_wholeness/config/locales",
-		"/Users/mroach/workspace/upstream_wholeness/public"
+		"/Users/mroach/workspace/upstream_wholeness/app/views/shared"
 	],
 	"file_history":
 	[
+		"/Users/mroach/workspace/upstream_wholeness/app/views/admin/cms/pages/show.html.erb",
+		"/Users/mroach/workspace/upstream_wholeness/config/initializers/mime_types.rb",
+		"/Users/mroach/workspace/upstream_wholeness/app/controllers/admin/home/home_controller.rb",
+		"/Users/mroach/workspace/upstream_wholeness/config/routes.rb",
+		"/Users/mroach/workspace/upstream_wholeness/app/views/admin/cms/pages/index.html.erb",
+		"/Users/mroach/workspace/upstream_wholeness/app/assets/stylesheets/application.css.scss",
 		"/Users/mroach/workspace/upstream_wholeness/app/assets/javascripts/blog.js.coffee",
+		"/Users/mroach/workspace/upstream_wholeness/app/views/home/index.html.erb",
+		"/Users/mroach/workspace/upstream_wholeness/app/views/admin/cms/pages/_form.html.erb",
+		"/Users/mroach/workspace/upstream_wholeness/app/views/admin/blog/articles/_form.html.erb",
+		"/Users/mroach/workspace/upstream_wholeness/app/views/layouts/_navigation.html.erb",
 		"/Users/mroach/workspace/upstream_wholeness/app/assets/javascripts/articles.js.coffee",
+		"/Users/mroach/workspace/upstream_wholeness/app/views/admin/cms/pages/index.json.jbuilder",
+		"/Users/mroach/workspace/upstream_wholeness/test/models/article_test.rb",
+		"/Users/mroach/workspace/upstream_wholeness/app/models/blog/article.rb",
+		"/Users/mroach/workspace/upstream_wholeness/config/environments/production.rb",
+		"/Users/mroach/workspace/upstream_wholeness/Gemfile",
+		"/Users/mroach/workspace/upstream_wholeness/db/migrate/20141118021534_create_articles.rb",
+		"/Users/mroach/workspace/upstream_wholeness/config/application.rb",
+		"/Users/mroach/workspace/upstream_wholeness/app/views/admin/blog/articles/show.html.erb",
+		"/Users/mroach/workspace/upstream_wholeness/db/schema.rb",
+		"/Users/mroach/workspace/upstream_wholeness/app/views/shared/_article.html.erb",
+		"/Users/mroach/workspace/upstream_wholeness/app/assets/stylesheets/home.css.scss",
+		"/Users/mroach/workspace/upstream_wholeness/db/migrate/20141121093119_create_pages.rb",
+		"/Users/mroach/workspace/upstream_wholeness/db/migrate/20141121095548_add_category_to_pages.rb",
+		"/Users/mroach/workspace/upstream_wholeness/app/controllers/admin/admin_controller.rb",
+		"/Users/mroach/workspace/upstream_wholeness/app/assets/javascripts/application.js",
+		"/Users/mroach/workspace/upstream_wholeness/db/migrate/20141121093119_create_cms.rb",
+		"/Users/mroach/workspace/upstream_wholeness/config/secrets.yml",
+		"/Users/mroach/workspace/upstream_wholeness/app/controllers/admin/blog/articles_controller.rb",
+		"/Users/mroach/workspace/upstream_wholeness/upstream_wholeness.sublime-project",
+		"/Users/mroach/workspace/upstream_wholeness/app/assets/stylesheets/foundation_and_overrides.scss",
+		"/Users/mroach/workspace/upstream_wholeness/config/boot.rb",
+		"/Users/mroach/workspace/upstream_wholeness/app/views/blog/articles/show.json.jbuilder",
+		"/Users/mroach/workspace/upstream_wholeness/app/helpers/application_helper.rb",
+		"/Users/mroach/workspace/upstream_wholeness/app/controllers/application_controller.rb",
+		"/Users/mroach/workspace/upstream_wholeness/app/controllers/home_controller.rb",
+		"/Users/mroach/workspace/upstream_wholeness/app/views/blog/articles/index.html.erb",
+		"/Users/mroach/workspace/upstream_wholeness/test/controllers/articles_controller_test.rb",
+		"/Users/mroach/workspace/upstream_wholeness/app/controllers/blog/articles_controller.rb",
+		"/Users/mroach/workspace/upstream_wholeness/app/views/blog/articles/show.html.erb",
+		"/Users/mroach/workspace/upstream_wholeness/app/views/admin/blog/articles/index.html.erb",
+		"/Users/mroach/workspace/upstream_wholeness/app/views/blog/articles/index.json.jbuilder",
+		"/Users/mroach/workspace/upstream_wholeness/app/assets/stylesheets/foundation-icons.css.scss",
+		"/Users/mroach/workspace/upstream_wholeness/app/assets/fonts/foundation-icons.woff",
+		"/Users/mroach/workspace/upstream_wholeness/app/assets/fonts/foundation-icons.ttf",
+		"/Users/mroach/workspace/upstream_wholeness/app/assets/fonts/foundation-icons.svg",
+		"/Users/mroach/workspace/upstream_wholeness/app/assets/fonts/foundation-icons.eot",
+		"/Users/mroach/workspace/upstream_wholeness/app/assets/images/excitement.jpg",
+		"/Users/mroach/workspace/upstream_wholeness/app/assets/images/.keep",
 		"/Users/mroach/workspace/upstream_wholeness/bower_components/foundation-datepicker/bower.json",
 		"/Users/mroach/workspace/upstream_wholeness/bower_components/foundation-datepicker/foundation/javascripts/vendor/jquery.js",
-		"/Users/mroach/workspace/upstream_wholeness/app/views/layouts/_navigation.html.erb",
-		"/Users/mroach/workspace/upstream_wholeness/test/models/article_test.rb",
-		"/Users/mroach/workspace/upstream_wholeness/app/controllers/blog/articles_controller.rb",
-		"/Users/mroach/workspace/upstream_wholeness/app/assets/javascripts/application.js",
-		"/Users/mroach/workspace/upstream_wholeness/app/views/blog/articles/show.html.erb",
-		"/Users/mroach/workspace/upstream_wholeness/app/views/admin/blog/articles/show.html.erb",
 		"/Users/mroach/workspace/upstream_wholeness/app/views/admin/blog/articles/new.html.erb",
-		"/Users/mroach/workspace/upstream_wholeness/app/views/admin/blog/articles/_form.html.erb",
 		"/Users/mroach/workspace/upstream_wholeness/app/views/layouts/_audits.html.erb",
-		"/Users/mroach/workspace/upstream_wholeness/app/views/blog/articles/show.json.jbuilder",
 		"/Users/mroach/workspace/upstream_wholeness/test/helpers/articles_helper_test.rb",
 		"/Users/mroach/workspace/upstream_wholeness/app/assets/stylesheets/articles.css.scss",
 		"/Users/mroach/workspace/upstream_wholeness/app/helpers/blog_helper.rb",
 		"/Users/mroach/workspace/upstream_wholeness/bin/bundle",
-		"/Users/mroach/workspace/upstream_wholeness/app/assets/stylesheets/application.css.scss",
-		"/Users/mroach/workspace/upstream_wholeness/app/controllers/application_controller.rb",
-		"/Users/mroach/workspace/upstream_wholeness/app/controllers/admin/blog/articles_controller.rb",
-		"/Users/mroach/workspace/upstream_wholeness/app/controllers/admin/admin_controller.rb",
-		"/Users/mroach/workspace/upstream_wholeness/app/views/blog/articles/index.html.erb",
-		"/Users/mroach/workspace/upstream_wholeness/app/views/home/index.html.erb",
-		"/Users/mroach/workspace/upstream_wholeness/Gemfile",
 		"/Users/mroach/workspace/upstream_wholeness/config/locales/en.yml",
 		"/Users/mroach/workspace/upstream_wholeness/app/views/layouts/application.html.erb",
-		"/Users/mroach/workspace/upstream_wholeness/config/application.rb",
 		"/Users/mroach/workspace/upstream_wholeness/app/views/admin/blog/articles/edit.html.erb",
-		"/Users/mroach/workspace/upstream_wholeness/db/schema.rb",
-		"/Users/mroach/workspace/upstream_wholeness/app/models/blog/article.rb",
 		"/Users/mroach/workspace/upstream_wholeness/app/models/.keep",
 		"/Users/mroach/workspace/upstream_wholeness/app/assets/images/movement.jpg",
-		"/Users/mroach/workspace/upstream_wholeness/app/assets/stylesheets/foundation_and_overrides.scss",
 		"/Users/mroach/workspace/upstream_wholeness/config/initializers/filter_parameter_logging.rb",
 		"/Users/mroach/workspace/upstream_wholeness/config/initializers/friendly_id.rb",
 		"/Users/mroach/workspace/upstream_wholeness/config.ru",
-		"/Users/mroach/workspace/upstream_wholeness/config/routes.rb",
-		"/Users/mroach/workspace/upstream_wholeness/app/assets/stylesheets/home.css.scss",
 		"/Users/mroach/workspace/upstream_wholeness/app/views/blog/articles/edit.html.erb",
 		"/Users/mroach/workspace/upstream_wholeness/config/initializers/inflections.rb",
 		"/Users/mroach/workspace/upstream_wholeness/test/fixtures/articles.yml",
 		"/Users/mroach/workspace/upstream_wholeness/app/models/article.rb",
 		"/Users/mroach/workspace/upstream_wholeness/app/controllers/articles_controller.rb",
-		"/Users/mroach/workspace/upstream_wholeness/upstream_wholeness.sublime-project",
-		"/Users/mroach/workspace/upstream_wholeness/db/migrate/20141118021534_create_articles.rb",
-		"/Users/mroach/workspace/upstream_wholeness/config/boot.rb",
 		"/Users/mroach/workspace/upstream_wholeness/db/development.sqlite3",
-		"/Users/mroach/workspace/upstream_wholeness/config/initializers/mime_types.rb",
 		"/Users/mroach/workspace/upstream_wholeness/config/initializers/backtrace_silencers.rb",
 		"/Users/mroach/workspace/upstream_wholeness/config/initializers/cookies_serializer.rb",
 		"/Users/mroach/workspace/upstream_wholeness/config/initializers/session_store.rb",
 		"/Users/mroach/workspace/upstream_wholeness/config/initializers/wrap_parameters.rb",
 		"/Users/mroach/workspace/upstream_wholeness/app/assets/images/nourishment.jpg",
-		"/Users/mroach/workspace/upstream_wholeness/app/assets/fonts/foundation-icons.ttf",
-		"/Users/mroach/workspace/upstream_wholeness/app/assets/fonts/foundation-icons.eot",
-		"/Users/mroach/workspace/upstream_wholeness/app/assets/images/excitement.jpg",
 		"/Users/mroach/workspace/upstream_wholeness/test/integration/.keep",
-		"/Users/mroach/workspace/upstream_wholeness/app/assets/stylesheets/foundation-icons.css.scss",
 		"/Users/mroach/workspace/upstream_wholeness/README.rdoc",
 		"/Users/mroach/workspace/upstream_wholeness/app/assets/fonts/foundation-icons.css",
 		"/Users/mroach/workspace/upstream_wholeness/public/favicon.ico",
@@ -836,26 +903,7 @@
 		"/Users/mroach/workspace/myflightmap2/app/assets/javascripts/application.js",
 		"/Users/mroach/workspace/myflightmap2/public/images/flags/16/je.png",
 		"/Users/mroach/workspace/myflightmap2/db/schema.rb",
-		"/Users/mroach/workspace/myflightmap2/bin/scss",
-		"/Users/mroach/workspace/myflightmap2/app/views/shared/_stat_boxes.html.erb",
-		"/Users/mroach/workspace/myflightmap2/config/initializers/session_store.rb",
-		"/Users/mroach/workspace/myflightmap2/app/assets/stylesheets/audits.css.scss",
-		"/Users/mroach/workspace/myflightmap2/db/migrate/20141030093314_add_utc_dates_to_flights.rb",
-		"/Users/mroach/workspace/myflightmap2/db/migrate/20141025034836_add_username_to_users.rb",
-		"/Users/mroach/workspace/myflightmap2/app/controllers/map_controller.rb",
-		"/Users/mroach/workspace/myflightmap2/app/controllers/trips_controller.rb",
-		"/Users/mroach/workspace/myflightmap2/app/controllers/flights_controller.rb",
-		"/Users/mroach/workspace/myflightmap2/app/controllers/airlines_controller.rb",
-		"/Users/mroach/workspace/myflightmap2/app/controllers/airports_controller.rb",
-		"/Users/mroach/workspace/myflightmap2/app/models/airline.rb",
-		"/Users/mroach/workspace/myflightmap2/config/routes.rb",
-		"/Users/mroach/workspace/myflightmap2/app/controllers/admin/admin_controller.rb",
-		"/Users/mroach/workspace/myflightmap2/app/controllers/audits_controller.rb",
-		"/Users/mroach/workspace/myflightmap2/app/views/airports/_form.html.erb",
-		"/Users/mroach/workspace/myflightmap2/app/models/user.rb",
-		"/Users/mroach/workspace/myflightmap2/app/models/flight.rb",
-		"/Users/mroach/workspace/myflightmap2/config.ru",
-		"/Users/mroach/workspace/myflightmap2/dev-misc/FlightMemory - FlightData.html"
+		"/Users/mroach/workspace/myflightmap2/bin/scss"
 	],
 	"find":
 	{
@@ -873,9 +921,17 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": false,
+		"case_sensitive": true,
 		"find_history":
 		[
+			"blog",
+			"article",
+			"blog",
+			"article",
+			"Blog",
+			"article",
+			"Article",
+			"Calligraffitti",
 			"generate",
 			"secret",
 			"find!",
@@ -995,15 +1051,7 @@
 			"columns",
 			"rewri",
 			"vhosts",
-			"root",
-			"vhosts",
-			",",
-			"lookup",
-			"airport",
-			"Myflightmap2",
-			"Myflightmap3",
-			"^(.*)$",
-			"dropdown"
+			"root"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1011,6 +1059,13 @@
 		"regex": true,
 		"replace_history":
 		[
+			"cms",
+			"page",
+			"cms",
+			"page",
+			"Cms",
+			"page",
+			"Page",
 			"\\1user_\\2",
 			"\\1_user_\\2",
 			"user_\\1",
@@ -1059,84 +1114,52 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 10,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "config/routes.rb",
+					"file": "app/models/cms/category.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1842,
+						"buffer_size": 143,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								457,
-								457
+								93,
+								138
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
-						"translation.x": 2.0,
+						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/views/admin/blog/articles/index.html.erb",
+					"file": "db/schema.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 639,
+						"buffer_size": 3456,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								110,
-								110
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/controllers/admin/blog/articles_controller.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2073,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1556,
-								1556
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1146,32 +1169,61 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
+						"translation.y": 548.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/models/cms/page.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 235,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								230,
+								230
+							]
+						],
+						"settings":
+						{
+							"auto_name": "class Cms::Page",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "app/views/admin/blog/articles/show.html.erb",
+					"file": "app/assets/stylesheets/home.css.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 567,
+						"buffer_size": 2511,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								418,
-								418
+								604,
+								604
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -1179,37 +1231,35 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "app/views/admin/blog/articles/_form.html.erb",
+					"file": "app/views/admin/cms/pages/edit.html.erb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1220,
+						"buffer_size": 141,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								848,
-								848
+								126,
+								126
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -1225,8 +1275,8 @@
 						"selection":
 						[
 							[
-								253,
-								253
+								259,
+								172
 							]
 						],
 						"settings":
@@ -1240,6 +1290,151 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/controllers/home_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 131,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								119,
+								119
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/controllers/admin/cms/pages_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2431,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2412,
+								2412
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/controllers/admin/home_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 77,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13,
+								13
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/views/admin/home/index.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 219,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								211,
+								20
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<a class=\"button\">",
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "app/views/admin/cms/pages/index.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 797,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								415,
+								415
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -1283,7 +1478,7 @@
 	"project": "upstream_wholeness.sublime-project",
 	"replace":
 	{
-		"height": 46.0
+		"height": 66.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1292,12 +1487,148 @@
 		"selected_items":
 		[
 			[
-				"js.c",
-				"app/assets/javascripts/blog.js.coffee"
+				"cmspagein",
+				"app/views/admin/cms/pages/index.html.erb"
+			],
+			[
+				"rou",
+				"config/routes.rb"
 			],
 			[
 				"_for",
-				"app/views/admin/blog/articles/_form.html.erb"
+				"app/views/admin/cms/pages/_form.html.erb"
+			],
+			[
+				"jsco",
+				"app/assets/javascripts/blog.js.coffee"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"pageed",
+				"app/views/admin/cms/pages/edit.html.erb"
+			],
+			[
+				"homesc",
+				"app/assets/stylesheets/home.css.scss"
+			],
+			[
+				"modpage",
+				"app/models/cms/page.rb"
+			],
+			[
+				"modart",
+				"app/models/blog/article.rb"
+			],
+			[
+				"page",
+				"app/models/cms/page.rb"
+			],
+			[
+				"cate",
+				"app/models/cms/category.rb"
+			],
+			[
+				"sch",
+				"db/schema.rb"
+			],
+			[
+				"addca",
+				"db/migrate/20141121095548_add_category_to_pages.rb"
+			],
+			[
+				"homecon",
+				"app/controllers/home_controller.rb"
+			],
+			[
+				"createpa",
+				"db/migrate/20141121093119_create_pages.rb"
+			],
+			[
+				"create",
+				"db/migrate/20141118021534_create_articles.rb"
+			],
+			[
+				"cms",
+				"db/migrate/20141121093119_create_cms.rb"
+			],
+			[
+				"_ar",
+				"app/views/shared/_article.html.erb"
+			],
+			[
+				"foun",
+				"app/assets/stylesheets/foundation_and_overrides.scss"
+			],
+			[
+				"hoemsc",
+				"app/assets/stylesheets/home.css.scss"
+			],
+			[
+				"app",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"blogjs",
+				"app/assets/javascripts/blog.js.coffee"
+			],
+			[
+				"artcon",
+				"app/controllers/admin/blog/articles_controller.rb"
+			],
+			[
+				"inde",
+				"app/views/home/index.html.erb"
+			],
+			[
+				"show",
+				"app/views/admin/blog/articles/show.html.erb"
+			],
+			[
+				"js",
+				"app/assets/javascripts/blog.js.coffee"
+			],
+			[
+				"modartic",
+				"app/models/blog/article.rb"
+			],
+			[
+				"rout",
+				"config/routes.rb"
+			],
+			[
+				"blogcon",
+				"app/controllers/admin/blog/articles_controller.rb"
+			],
+			[
+				"blogindex",
+				"app/views/admin/blog/articles/index.html.erb"
+			],
+			[
+				"blogin",
+				"app/views/blog/articles/index.html.erb"
+			],
+			[
+				"hoemcon",
+				"app/controllers/home_controller.rb"
+			],
+			[
+				"appsc",
+				"app/assets/stylesheets/application.css.scss"
+			],
+			[
+				"found",
+				"app/assets/stylesheets/foundation_and_overrides.scss"
+			],
+			[
+				"homei",
+				"app/views/home/index.html.erb"
+			],
+			[
+				"js.c",
+				"app/assets/javascripts/blog.js.coffee"
 			],
 			[
 				"modar",
@@ -1318,10 +1649,6 @@
 			[
 				"artsho",
 				"app/views/blog/articles/show.html.erb"
-			],
-			[
-				"blogcon",
-				"app/controllers/admin/blog/articles_controller.rb"
 			],
 			[
 				"adminblogshow",
@@ -1348,10 +1675,6 @@
 				"app/assets/javascripts/articles.js.coffee"
 			],
 			[
-				"app",
-				"app/assets/javascripts/application.js"
-			],
-			[
 				"appcs",
 				"app/assets/stylesheets/application.css.scss"
 			],
@@ -1364,10 +1687,6 @@
 				"app/views/layouts/application.html.erb"
 			],
 			[
-				"appsc",
-				"app/assets/stylesheets/application.css.scss"
-			],
-			[
 				"new.",
 				"app/views/admin/blog/articles/new.html.erb"
 			],
@@ -1376,16 +1695,8 @@
 				"config/locales/en.yml"
 			],
 			[
-				"sch",
-				"db/schema.rb"
-			],
-			[
 				"modarti",
 				"app/models/blog/article.rb"
-			],
-			[
-				"modart",
-				"test/models/article_test.rb"
 			],
 			[
 				"admi",
@@ -1398,14 +1709,6 @@
 			[
 				"art",
 				"app/controllers/blog/articles_controller.rb"
-			],
-			[
-				"artcon",
-				"app/controllers/blog/articles_controller.rb"
-			],
-			[
-				"rou",
-				"config/routes.rb"
 			],
 			[
 				"nav",
@@ -1448,10 +1751,6 @@
 				"app/controllers/articles_controller.rb"
 			],
 			[
-				"create",
-				"db/migrate/20141118021534_create_articles.rb"
-			],
-			[
 				"arti",
 				"app/models/article.rb"
 			],
@@ -1465,10 +1764,6 @@
 			],
 			[
 				"fou",
-				"app/assets/stylesheets/foundation_and_overrides.scss"
-			],
-			[
-				"foun",
 				"app/assets/stylesheets/foundation_and_overrides.scss"
 			],
 			[
@@ -1524,10 +1819,6 @@
 				"app/controllers/airlines_controller.rb"
 			],
 			[
-				"route",
-				"config/routes.rb"
-			],
-			[
 				"modus",
 				"app/models/user.rb"
 			],
@@ -1576,10 +1867,6 @@
 				"app/views/layouts/_navigation_links.html.erb"
 			],
 			[
-				"rout",
-				"config/routes.rb"
-			],
-			[
 				"da",
 				"lib/tasks/data.rake"
 			],
@@ -1622,10 +1909,6 @@
 			[
 				"trip",
 				"app/assets/stylesheets/trips.css.scss"
-			],
-			[
-				"show",
-				"app/views/flights/show.html.erb"
 			],
 			[
 				"flightin",
@@ -1714,94 +1997,6 @@
 			[
 				"gemfi",
 				"Gemfile"
-			],
-			[
-				"confi",
-				"config.ru"
-			],
-			[
-				"deploy",
-				"config/deploy.rb"
-			],
-			[
-				"improthtml",
-				"app/views/import/flight_memory/upload.html.erb"
-			],
-			[
-				"airportshow",
-				"app/views/airports/show.html.erb"
-			],
-			[
-				"airportscss",
-				"app/assets/stylesheets/airports.css.scss"
-			],
-			[
-				"apphep",
-				"app/helpers/application_helper.rb"
-			],
-			[
-				"slim",
-				"app/views/shared/_flights_slim.html.erb"
-			],
-			[
-				"tiny",
-				"app/views/shared/_flights_tiny.html.erb"
-			],
-			[
-				"flightsc",
-				"app/assets/stylesheets/flights.css.scss"
-			],
-			[
-				"flighted",
-				"app/views/flights/edit.html.erb"
-			],
-			[
-				"flightform",
-				"app/views/flights/_form.html.erb"
-			],
-			[
-				"flightjs",
-				"app/assets/javascripts/flights.js.coffee"
-			],
-			[
-				"importhtml",
-				"app/views/import/flight_memory/index.html.erb"
-			],
-			[
-				"edit",
-				"app/views/devise/registrations/edit.html.erb"
-			],
-			[
-				"simple",
-				"config/initializers/simple_form.rb"
-			],
-			[
-				"flightshow",
-				"app/views/flights/show.html.erb"
-			],
-			[
-				"rake",
-				"lib/tasks/data.rake"
-			],
-			[
-				"layou",
-				"app/views/layouts/application.html.erb"
-			],
-			[
-				"tripscss",
-				"app/assets/stylesheets/trips.css.scss"
-			],
-			[
-				"sharefl",
-				"app/views/shared/_flights_slim.html.erb"
-			],
-			[
-				"sharedflight",
-				"app/views/shared/_flights_large.html.erb"
-			],
-			[
-				"layout",
-				"app/views/layouts/application.html.erb"
 			]
 		],
 		"width": 0.0

@@ -1,10 +1,10 @@
-<%= form_for([:admin, @article]) do |f| %>
-  <% if @article.errors.any? %>
+<%= form_for([:admin, @page]) do |f| %>
+  <% if @page.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@article.errors.count, "error") %> prohibited this article from being saved:</h2>
+      <h2><%= pluralize(@page.errors.count, "error") %> prohibited this page from being saved:</h2>
 
       <ul>
-      <% @article.errors.full_messages.each do |message| %>
+      <% @page.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
@@ -22,12 +22,12 @@
       <label>Published?</label>
       <div class="switch small">
         <%= f.check_box :published %>
-        <label for="blog_article_published"></label>
+        <label for="cms_page_published"></label>
       </div>
     </div>
     <div class="small-4 columns end">
       <label>Article Date
-        <%= f.text_field :published_at, value: @article.published_at.strftime('%Y-%m-%d %H:%M') %>
+        <%= f.text_field :published_at, value: @page.published_at.strftime('%Y-%m-%d %H:%M') %>
       </label>
     </div>
   </div>
@@ -41,7 +41,7 @@
   <div class="row">
     <div class="large-12 columns">
       <div class="actions">
-        <button data-reveal-id="preview-modal" data-preview-endpoint="<%= admin_blog_articles_preview_path %>" data-preview-source="blog_article_content">
+        <button data-reveal-id="preview-modal" data-preview-endpoint="<%= admin_cms_pages_preview_path %>" data-preview-source="cms_page_content">
           Preview
         </button>
         <div id="preview-modal" class="reveal-modal" data-reveal></div>
