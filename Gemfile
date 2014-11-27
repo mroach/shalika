@@ -9,8 +9,8 @@ gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer',  platforms: :ruby
+# Support the HAML view engine
+gem 'haml'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -37,6 +37,7 @@ gem "audited-activerecord", "~> 4.0"
 # Easily slugged URLs
 gem 'friendly_id', '~> 5.0.0'
 
+# Markdown renderer
 gem 'redcarpet'
 
 # Use debugger

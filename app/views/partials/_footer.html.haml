@@ -1,0 +1,26 @@
+%footer.footer
+  %div.row.full-width
+    %div.small-12.medium-4.large-4.columns
+      %h4 Contact Me
+      %div.contact
+        %div.phone
+          %i.fi-telephone
+          %a{href:"tel:++61420631518"} +61 420 631 518
+        %div.email
+          %i.fi-mail
+          =mail_to "shalika@upstreamwholeness.com"
+    %div.small-12.medium-4.large-4.columns
+      %h4 Follow me
+      %div.socials
+        %div.social.facebook
+          %i.fi-social-facebook
+        %div.social.twitter
+          %i.fi-social-twitter
+        %div.social.instagram
+          %i.fi-social-instagram
+    %div.small-12.medium-4.large-4.columns
+      %h4 Work With Me
+      %ul.footer-links
+        %li= link_to "Services", cms_show_page_path("services")
+        %li= link_to "Blog", cms_show_page_path("blog")
+        %li= link_to "Contact", cms_show_page_path("contact")

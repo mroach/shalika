@@ -1,0 +1,49 @@
+%header
+  %div.row
+    %div.large-12.column
+      %div.header-banner
+        %ul.small-block-grid-4
+          %li Mind
+          %li Body
+          %li Wellness
+          %li Whole
+
+%br
+
+%div.row
+  %div.small-3.columns
+    = image_tag "movement.jpg", height: "300px"
+    %h4 Movement
+    %p Skills, mobility, variations, progressions, combinations
+  %div.small-3.columns
+    = image_tag "nourishment.jpg", height: "300px"
+    %h4 Nourishment
+    %p Food, recipes, recovery, vitamins, minerals, toxicity, growing food.
+  %div.small-3.columns
+    = image_tag "development.jpg", height: "300px"
+    %h4 Development
+    %p Jedi mind tricks, goal-setting, hypnotherapy, visualisation, spiritual practice.
+  %div.small-3.columns
+    = image_tag "excitement.jpg", height: "300px"
+    %h4 Excitement
+    %p Travel, workshops, internships
+
+%div.row
+  %div.large-8.columns{role:"content"}
+    - @articles.each do |article|
+      = render partial: "shared/article", object: article
+
+  %aside.large-4.columns
+    %div.panel.letter-of-the-week
+      %h5 Letter of the week
+      %p B is for beetroot. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly.
+      %a{href:"#"} Read More &rarr;
+
+    %div.panel
+      %h5 Featured
+      %p Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow.
+      %a{href:"#"} Read More &rarr;
+
+%hr
+
+= render partial: "partials/contact"

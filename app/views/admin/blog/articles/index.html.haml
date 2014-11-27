@@ -1,0 +1,21 @@
+%div.row= link_to "New Article", new_admin_blog_article_path, class: "button"
+
+%div.row
+  %table
+    %thead
+      %tr>
+        %th Article
+        %th Date
+        %th Published?
+        %th
+    %tbody
+      - @articles.each do |article|
+        %tr
+          %td{scope: "row"}= article.title
+          %td= l article.published_at, format: :longest
+          %td{class: ["status", article.published? ? 'success' : 'alert']}
+            = article.published? ? 'Live!' : 'Draft'
+          %td
+            link_to edit_admin_blog_article_path(article)
+              %i.fi-page-edit
+              Edit

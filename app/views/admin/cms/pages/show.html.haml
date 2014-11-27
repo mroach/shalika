@@ -1,0 +1,11 @@
+
+= render partial: "shared/page", object: @page
+
+%hr
+
+%div.row
+  %h2 Change history
+  = render partial: "shared/audits", object: @page.audits
+
+%div.row
+  = link_to 'Edit', edit_admin_cms_page_path(@page)

@@ -1,0 +1,4 @@
+- @articles.each do |article|
+  %div.row.article
+    %div.large-9.columns{role: "content"}
+      = render partial: "shared/article", object: article

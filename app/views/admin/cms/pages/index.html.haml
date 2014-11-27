@@ -1,0 +1,21 @@
+%div.row= link_to "New Page", new_admin_cms_page_path, class: "button"
+
+%div.row
+  %table
+    %thead
+      %tr
+        %th Page
+        %th Date
+        %th Published?
+        %th
+    %tbody
+      - @pages.each do |page|
+        %tr
+          %td.row= link_to page.title, edit_admin_cms_page_path(page)
+          %td= l page.published_at, format: :longest
+          %td{class: ["status", page.published? ? 'success' : 'alert']}
+            = page.published? ? 'Live!' : 'Draft'
+          %td
+            = link_to edit_admin_cms_page_path(page) do
+              %i.fi-page-edit
+              Edit

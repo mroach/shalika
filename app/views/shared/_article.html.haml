@@ -1,0 +1,4 @@
+%article.article
+  %h3= link_to article.title, blog_article_path(article)
+  %h6.date= l article.published_at, format: :medium
+  %div.article-content= markdown article.content

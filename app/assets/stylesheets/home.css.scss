@@ -1,3 +1,7 @@
+section#main {
+  margin-top: 10px;
+}
+
 .header-banner {
   background-image: image-url("header.jpg");
   background-size: cover;
@@ -75,16 +79,17 @@ td.status {
 /* Footer */
 .footer {
   background-color: #292f33;
-  padding: 1rem 1rem;
+  padding: .5rem 1rem;
   text-align: center;
   color: white;
+  margin-top: 80px;
 
   h4 {
     color: white;
     font-size: 1em;
     font-weight: 400;
     text-transform: uppercase;
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
     margin-bottom: 10px;
   }
   p, a {
@@ -98,6 +103,7 @@ td.status {
     display: flex;
     flex-flow: row;
     justify-content: space-around;
+    margin-top: 25px;
 
     .social {
       display: inline-block;
@@ -130,7 +136,7 @@ td.status {
 .footer {
   .columns:nth-child(n+2) {
     border-left: 1px solid scale-color(white, $lightness: -30%);
-    min-height: 200px;
+    min-height: 170px;
   }
  }
 }

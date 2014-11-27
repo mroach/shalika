@@ -1,0 +1,27 @@
+= form_for([:admin, @article]) do |f|
+  %div.row
+    %div.large-12.columns
+      = f.text_field :title, placeholder: "Title"
+
+  %div.row
+    %div.small-2.columns
+      %label Published?
+      %div.switch.small
+        = f.check_box :published
+        %label{for: "blog_article_published"}
+    %div.small-4.columns.end
+      %label
+        Article Date
+        = f.text_field :published_at, value: @article.published_at.strftime('%Y-%m-%d %H:%M')
+
+  %div.row
+    %div.large-12.columns
+      = f.text_area :content, rows: 20
+
+  %div.row
+    %div.large-12.columns
+      %div.actions
+        %button{:'data-reveal-id' => "preview-modal", :'data-preview-endpoint' => admin_blog_articles_preview_path, :'data-preview-source' => "blog_article_content"}
+          Preview
+        %div.reveal-modal#preview-modal{:'data-reveal' => true}
+        = f.submit class: "button"

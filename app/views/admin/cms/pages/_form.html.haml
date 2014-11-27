@@ -13,7 +13,13 @@
 
   <div class="row">
     <div class="large-12 columns">
-      <%= f.text_field :title, placeholder: "Title" %>
+      <%= f.text_field :name, placeholder: "Page name", data: {tooltip: true}, title: "Page name to be used in the URL. Ex) about, contact" %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="large-12 columns">
+      <%= f.text_field :title, placeholder: "Title", data: {tooltip: true}, title: "Title to appear at the top of the page" %>
     </div>
   </div>
 
@@ -22,11 +28,11 @@
       <label>Published?</label>
       <div class="switch small">
         <%= f.check_box :published %>
-        <label for="cms_page_published"></label>
+        <label for="cms_page_published" data-tooltip="true" title="If published, the page is viewable"></label>
       </div>
     </div>
     <div class="small-4 columns end">
-      <label>Article Date
+      <label>Published Date
         <%= f.text_field :published_at, value: @page.published_at.strftime('%Y-%m-%d %H:%M') %>
       </label>
     </div>

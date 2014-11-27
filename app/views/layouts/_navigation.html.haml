@@ -1,0 +1,14 @@
+%div.contain-to-grid.top-bar-border.animated#top-bar-container
+  %nav.top-bar{:role => "navigation", :'data-topbar' => true}
+    %ul.title-area
+      %li.name
+        %h1= link_to "Upstream Wholeness", root_path
+      %li.toggle-topbar.menu-icon
+        = link_to "#" do
+          %span Menu
+
+    %section.top-bar-section
+      %ul.right.button-group
+        %li= link_to "About Shalika", cms_show_page_path("about")
+        %li= link_to "Services", cms_show_page_path("services")
+        %li.has-form= link_to "Contact Us", cms_show_page_path("contact"), class: "button"
