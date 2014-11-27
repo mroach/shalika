@@ -13,14 +13,14 @@
       %td= a.comment
       %td
         %table.audited-change
-        - a.audited_changes.reject { |k,v| v.blank? }.each do |k,v|
-          %tr
-            %td.field= k
-            - if a.action == "update"
-              %td.old-value
-                %span= v[0].blank? ? "<i>null</i>".html_safe : v[0]
-              %td.new-value
-                %span= v[1].blank? ? "<i>null</i>".html_safe : v[1]
-            - else
-              %td.created-value
-                %span= v
+          - a.audited_changes.reject { |k,v| v.blank? }.each do |k,v|
+            %tr
+              %td.field= k
+              - if a.action == "update"
+                %td.old-value
+                  %span= v[0].blank? ? "<i>null</i>".html_safe : v[0]
+                %td.new-value
+                  %span= v[1].blank? ? "<i>null</i>".html_safe : v[1]
+              - else
+                %td.created-value
+                  %span= v
