@@ -1,0 +1,15 @@
+%div.row
+  %div.small-12.large-6.columns
+    %div.contact-box
+      %div.row.collapse
+        %div.small-4.columns Phone
+        %div.small-8.columns +61 000 000 000
+
+  %div.small-12.large-6.columns
+    = form_for(@enquiry) do |f|
+      = f.text_field :name, placeholder: "Your name"
+      = f.text_field :email, placeholder: "Email address", type: :email
+      = f.text_field :phone, placeholder: "Phone number"
+      = f.text_area :message, placeholder: "Message"
+      %div.actions
+        = f.submit class: "button"

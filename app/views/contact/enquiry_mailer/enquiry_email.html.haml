@@ -1,0 +1,16 @@
+!!! 5
+%html
+  %head
+    %meta{:content => 'text/html; charset=UTF-8', :'http-equiv' => 'Content-Type'}
+  %body
+    %h1 Message from #{@enquiry.name}
+    %table
+      %tr
+        %th Email
+        %td= @enquiry.email
+      %tr
+        %th Phone
+        %td= @enquiry.phone
+      %tr
+        %th Message
+        %td= @enquiry.message

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141125034435) do
+ActiveRecord::Schema.define(version: 20141127080720) do
 
   create_table "articles", force: true do |t|
     t.integer  "author"
@@ -59,6 +59,17 @@ ActiveRecord::Schema.define(version: 20141125034435) do
 
   add_index "categories", ["slug"], name: "index_categories_on_slug", unique: true
 
+  create_table "enquiries", force: true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "phone"
+    t.text     "message"
+    t.boolean  "sent"
+    t.boolean  "seen"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "friendly_id_slugs", force: true do |t|
     t.string   "slug",                      null: false
     t.integer  "sluggable_id",              null: false
@@ -79,6 +90,7 @@ ActiveRecord::Schema.define(version: 20141125034435) do
     t.datetime "published_at"
     t.string   "slug"
     t.integer  "category_id"
+    t.string   "name"
   end
 
   add_index "pages", ["category_id"], name: "index_pages_on_category_id"

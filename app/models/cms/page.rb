@@ -4,7 +4,9 @@ class Cms::Page < ActiveRecord::Base
 
   belongs_to :category
 
-  friendly_id :title, use: [:slugged, :history]
+  validates_presence_of :name
+
+  friendly_id :name, use: [:slugged, :history]
 
   after_initialize :defaults
 
