@@ -11,7 +11,7 @@
     %tbody
       - @articles.each do |article|
         %tr
-          %td{scope: "row"}= article.title
+          %td{scope: "row"}= link_to article.title, edit_admin_blog_article_path(article)
           %td= l article.published_at, format: :longest
           %td{class: ["status", article.published? ? 'success' : 'alert']}
             = article.published? ? 'Live!' : 'Draft'
