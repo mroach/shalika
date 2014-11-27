@@ -1,0 +1,7 @@
+- if @form_errors.present? && @form_errors.any?
+  %div#error_explanation
+    %h2= #{pluralize(@form_errors.count, "error")} prohibited this page from being saved:
+
+    %ul
+    - @page.errors.full_messages.each do |message|
+      %li= message
