@@ -1,4 +1,6 @@
 = form_for([:admin, @article]) do |f|
+  = render partial: "partials/form_errors", object: @article.errors
+
   %div.row
     %div.large-12.columns
       = f.text_field :title, placeholder: "Title"

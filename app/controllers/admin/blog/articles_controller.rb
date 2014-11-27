@@ -2,24 +2,30 @@ class Admin::Blog::ArticlesController < Admin::AdminController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
   protect_from_forgery :except => [:preview]
 
+  add_breadcrumb "Blog", :admin_blog_root_path
+
   # GET /articles
   # GET /articles.json
   def index
     @articles = ::Blog::Article.all
+    add_breadcrumb "Articles"
   end
 
   # GET /articles/1
   # GET /articles/1.json
   def show
+    add_breadcrumb @article.title
   end
 
   # GET /articles/new
   def new
     @article = ::Blog::Article.new
+    add_breadcrumb "Create new blog post"
   end
 
   # GET /articles/1/edit
   def edit
+    add_breadcrumb "Editing \"#{@article.title}\""
   end
 
   def preview

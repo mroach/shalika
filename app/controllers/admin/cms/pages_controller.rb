@@ -2,6 +2,8 @@ class Admin::Cms::PagesController < Admin::AdminController
   before_action :set_page, only: [:show, :edit, :update, :destroy]
   protect_from_forgery :except => [:preview]
 
+  add_breadcrumb "Site Pages", :admin_cms_root_path
+
   # GET /pages
   # GET /pages.json
   def index
@@ -11,15 +13,18 @@ class Admin::Cms::PagesController < Admin::AdminController
   # GET /pages/1
   # GET /pages/1.json
   def show
+    add_breadcrumb @page.title
   end
 
   # GET /pages/new
   def new
     @page = ::Cms::Page.new
+    add_breadcrumb "Creating new site page"
   end
 
   # GET /pages/1/edit
   def edit
+    add_breadcrumb "Editing \"#{@page.title}\""
   end
 
   def preview

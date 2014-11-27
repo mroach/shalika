@@ -40,6 +40,9 @@ gem 'friendly_id', '~> 5.0.0'
 # Markdown renderer
 gem 'redcarpet'
 
+# Auto breadcrumb generation
+gem 'breadcrumbs_on_rails'
+
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
