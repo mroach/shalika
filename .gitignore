@@ -11,4 +11,9 @@
 
 # Ignore files with secrets
 config/secrets.yml
+
+# Ignore OS X index
 .DS_Store
+
+# Ignore Sublime workspace file
+*.sublime-workspace
