@@ -1,4 +1,4 @@
-$ ->
+$(document).on 'ready page:load', ->
   $('button[data-preview-endpoint]').on 'click', () ->
     url = $(this).attr('data-preview-endpoint')
     target = $(this).attr('data-reveal-id')

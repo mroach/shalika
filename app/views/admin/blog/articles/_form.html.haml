@@ -23,7 +23,7 @@
   %div.row
     %div.large-12.columns
       %div.actions
-        %button{:'data-reveal-id' => "preview-modal", :'data-preview-endpoint' => admin_blog_articles_preview_path, :'data-preview-source' => "blog_article_content"}
+        %button{:'data-reveal-id' => "preview-modal", :'data-preview-endpoint' => admin_blog_articles_preview_path, :'data-preview-source' => "blog_article_content", :'data-no-turbolink' => true}
           Preview
         %div.reveal-modal#preview-modal{:'data-reveal' => true}
         = f.submit class: "button"
