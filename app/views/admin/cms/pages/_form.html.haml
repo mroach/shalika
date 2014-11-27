@@ -1,58 +1,33 @@
-<%= form_for([:admin, @page]) do |f| %>
-  <% if @page.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@page.errors.count, "error") %> prohibited this page from being saved:</h2>
+= form_for([:admin, @page]) do |f|
+  = render partial: "partials/form_errors", object: @page.errors
 
-      <ul>
-      <% @page.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+  %div.row
+    %div.large-12.columns
+      = f.text_field :name, placeholder: "Page name", data: {tooltip: true}, title: "Page name to be used in the URL. Ex) about, contact"
 
-  <div class="row">
-    <div class="large-12 columns">
-      <%= f.text_field :name, placeholder: "Page name", data: {tooltip: true}, title: "Page name to be used in the URL. Ex) about, contact" %>
-    </div>
-  </div>
+  %div.row
+    %div.large-12.columns
+      = f.text_field :title, placeholder: "Title", data: {tooltip: true}, title: "Title to appear at the top of the page"
 
-  <div class="row">
-    <div class="large-12 columns">
-      <%= f.text_field :title, placeholder: "Title", data: {tooltip: true}, title: "Title to appear at the top of the page" %>
-    </div>
-  </div>
+  %div.row
+    %div.small-2.columns
+      %label Published?
+      %div.switch.small
+        = f.check_box :published
+        %label{:for => "cms_page_published", :'data-tooltip' => true, :title => "If published, the page is viewable"}
+    %div.small-4.columns.end
+      %label
+        Published Date
+        = f.text_field :published_at, value: @page.published_at.strftime('%Y-%m-%d %H:%M')
 
-  <div class="row">
-    <div class="small-2 columns">
-      <label>Published?</label>
-      <div class="switch small">
-        <%= f.check_box :published %>
-        <label for="cms_page_published" data-tooltip="true" title="If published, the page is viewable"></label>
-      </div>
-    </div>
-    <div class="small-4 columns end">
-      <label>Published Date
-        <%= f.text_field :published_at, value: @page.published_at.strftime('%Y-%m-%d %H:%M') %>
-      </label>
-    </div>
-  </div>
+  %div.row
+    %div.large-12.columns
+      = f.text_area :content, rows: 20
 
-  <div class="row">
-    <div class="large-12 columns">
-      <%= f.text_area :content, rows: 20 %>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="large-12 columns">
-      <div class="actions">
-        <button data-reveal-id="preview-modal" data-preview-endpoint="<%= admin_cms_pages_preview_path %>" data-preview-source="cms_page_content">
+  %div.row
+    %div.large-12.columns
+      %div.actions
+        %button{:'data-reveal-id' => "preview-modal", :'data-preview-endpoint' => admin_cms_pages_preview_path, :'data-preview-source' => "cms_page_content", :'data-no-turbolink' => true}
           Preview
-        </button>
-        <div id="preview-modal" class="reveal-modal" data-reveal></div>
-        <%= f.submit class: "button" %>
-      </div>
-    </div>
-  </div>
-<% end %>
+        %div#preview-modal.reveal-modal{:'data-reveal' => true}
+        = f.submit class: "button"
