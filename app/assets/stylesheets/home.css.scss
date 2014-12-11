@@ -1,5 +1,35 @@
-section#main {
+#main {
   margin-top: 10px;
+}
+
+/* Heart and site name in the navbar */
+/* http://www.colourlovers.com/palette/108476/Tiger_Lily */
+.brand {
+  & * { vertical-align: middle }
+  span {
+    font-size: 22px;
+    font-family: "Josefin Slab";
+    text-shadow: 0 2px 1px #444;
+  }
+  i {
+    $size: 30px;
+    $color: #71871E;
+    $shadow-color: #AFC46A;
+    $gap-color: #fff;
+
+    margin-right: .4em;
+
+    font-size: $size;
+    color: $color;
+    text-shadow:  0 0 (0.10 * $size) $gap-color,
+                  0 0 (0.15 * $size) $gap-color,
+                  0 0 (0.25 * $size) $gap-color,
+                  0 0 (0.30 * $size) $shadow-color,
+                  0 0 (0.45 * $size) $shadow-color,
+                  0 0 (0.55 * $size) $shadow-color,
+                  0 0 (0.70 * $size) $shadow-color,
+                  0 0 (1.05 * $size) $shadow-color;
+  }
 }
 
 .header-banner {
@@ -47,33 +77,6 @@ td.status {
 
 .panel {
   h5 { text-transform: uppercase; font-weight: bold; opacity: 0.9 }
-}
-
-.student {
-  margin-left: 25px;
-  margin-bottom: 80px;
-  .photo {
-    background-color: #ccc;
-    border-radius: 100px;
-    width: 70px;
-    height: 70px;
-    float: left;
-    margin-right: 15px;
-  }
-  p {
-    position: relative;
-    top: 5px;
-    &:nth-child(2) {
-      font-size: 16px;
-      font-weight: 500;
-      margin-bottom: 0;
-    }
-    &:nth-child(3) {
-      font-size: 14px;
-      font-weight: 400;
-      color: #777;
-    }
-  }
 }
 
 /* Footer */

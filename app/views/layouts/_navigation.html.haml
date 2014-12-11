@@ -2,7 +2,10 @@
   %nav.top-bar{:role => "navigation", :'data-topbar' => true}
     %ul.title-area
       %li.name
-        %h1= link_to "Upstream Wholeness", root_path
+        %h1.brand
+          = link_to root_path do
+            %i.fi-heart
+            %span Upstream Wholeness
       %li.toggle-topbar.menu-icon
         = link_to "#" do
           %span Menu
