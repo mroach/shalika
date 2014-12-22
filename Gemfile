@@ -41,6 +41,8 @@ gem 'breadcrumbs_on_rails'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'pg', groups: [:production]
+
 group :development do
   # Use Capistrano for deployment
   gem 'capistrano', '~> 3.2.1'
@@ -48,12 +50,12 @@ group :development do
   gem 'capistrano-rails', '~> 1.1.1', require: false
   gem 'capistrano-rbenv', '~> 2.0', require: false
 
-  gem 'sqlite3'
-
   # Hush the asset pipeline logging
   gem 'quiet_assets'
 end
 
-group :production do
-  gem 'pg'
+group :development, :test do
+  gem 'sqlite3'
+  gem 'rspec-rails', '~> 3.0'
+  gem 'dotenv-rails'
 end
