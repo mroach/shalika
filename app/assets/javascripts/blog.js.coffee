@@ -1,5 +1,6 @@
 $(document).on 'ready page:load', ->
-  $('button[data-preview-endpoint]').on 'click', () ->
+  $('button[data-preview-endpoint]').on 'click', (e) ->
+    e.preventDefault()
     url = $(this).attr('data-preview-endpoint')
     target = $(this).attr('data-reveal-id')
     source = $(this).attr('data-preview-source')
