@@ -24,7 +24,7 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'foundation-rails'
 
-gem 'rollbar', '~> 1.2.6'
+gem 'rollbar', '~> 1.3'
 
 # Change tracking for ActiveRecord models
 gem "audited-activerecord", "~> 4.0"
