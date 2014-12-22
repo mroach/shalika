@@ -1,10 +1,5 @@
 class Admin::AdminController < ApplicationController
   layout 'admin'
 
-  # Disable the admin area for now
-  before_action :reject
-
-  def reject
-    raise ActionController::RoutingError.new('Not Found') unless Rails.env.development?
-  end
+  http_basic_authenticate_with name: ENV['ADMIN_USER'], password: ENV['ADMIN_PASS']
 end
